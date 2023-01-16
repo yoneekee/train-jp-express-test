@@ -2,7 +2,7 @@
 
 - 브라우저 벗어나서 js 실행 가능
 
-# node express 사용방법
+# node express 사용방법 1
 
 1. npm init
 2. npm install express
@@ -10,3 +10,8 @@
    // package.json에서 수정 가능
 4. node index.js OR node index : 서버 구동
    // 127.0.0.0/~
+
+# node express 사용방법 2
+
+1. 2. 3. 위와 동일
+2. nodemon index

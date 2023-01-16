@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="/loginOk" method="get">
+      <div>아이디 : <input type="text" name="userId" /></div>
+      <div>비밀번호 : <input type="password" name="userPwd" /></div>
+      <div>
+        <label
+          ><span>남자</span
+          ><input type="radio" name="gender" value="male" /></label
+        ><label
+          ><span>여자</span><input type="radio" name="gender" value="female"
+        /></label>
+      </div>
+      <input type="submit" value="login" />
+    </form>
+  </body>
+</html>
