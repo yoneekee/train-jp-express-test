@@ -1,0 +1,22 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "description": "- 브라우저 벗어나서 js 실행 가능",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoneekee/train-jp-express-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoneekee/train-jp-express-test/issues"
+  },
+  "homepage": "https://github.com/yoneekee/train-jp-express-test#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
