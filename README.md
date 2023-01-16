@@ -13,5 +13,5 @@
 
 # node express 사용방법 2
 
-1. 2. 3. 위와 동일
-2. nodemon index
+- 1,2,3 위와 동일
+- 대신 4 : nodemon index
