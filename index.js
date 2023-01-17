@@ -25,19 +25,34 @@ app.get("/board", (req, res) => {
     title: "board",
     boardTexts: [
       {
+        num: 1,
         name: "이름1",
         title: "제목입니다",
         dates: "2023-01-01",
       },
       {
+        num: 2,
         name: "이름2",
         title: "제목입니다",
-        dates: "2023-01-01",
+        dates: "2023-01-02",
       },
       {
+        num: 3,
         name: "이름3",
         title: "제목입니다",
-        dates: "2023-01-01",
+        dates: "2023-01-03",
+      },
+      {
+        num: 4,
+        name: "이름4",
+        title: "제목입니다",
+        dates: "2023-01-04",
+      },
+      {
+        num: 5,
+        name: "이름5",
+        title: "제목입니다",
+        dates: "2023-01-05",
       },
     ],
   });
@@ -45,6 +60,10 @@ app.get("/board", (req, res) => {
 
 app.get("/join", (req, res) => {
   res.render("join", { title: "join", mainTitle: "회원가입하세요" });
+});
+
+app.get("/total", (req, res) => {
+  res.render("total", { title: "total" });
 });
 
 app.get("/loginok", (req, res) => {

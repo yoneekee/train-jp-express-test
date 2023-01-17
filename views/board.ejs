@@ -4,12 +4,14 @@
     <h1><%=title%></h1>
     <table>
       <tr>
+        <th>순번</th>
         <th>작성자</th>
         <th>제목</th>
         <th>등록일자</th>
       </tr>
       <% for(let i=0; i<boardTexts.length; i++){ %>
       <tr>
+        <td><%=boardTexts[i].num%></td>
         <td><%=boardTexts[i].name%></td>
         <td><%=boardTexts[i].title%></td>
         <td><%=boardTexts[i].dates%></td>
