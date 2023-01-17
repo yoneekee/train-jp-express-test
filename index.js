@@ -16,12 +16,13 @@ app.set("views", path.join(__dirname, "views")); // views 폴더에 다 있다
 
 app.get("/login", (req, res) => {
   //res.sendFile(path.join(__dirname, "./html/login.html"));
-  res.render("login", { title: "login" });
+  res.render("login", { title: "login", mainTitle: "로그인하세요" });
 });
 
 app.get("/board", (req, res) => {
   //res.sendFile(path.join(__dirname, "./html/board.html"));
   res.render("board", {
+    mainTitle: "게시판입니다",
     title: "board",
     boardTexts: [
       {
@@ -63,7 +64,7 @@ app.get("/join", (req, res) => {
 });
 
 app.get("/total", (req, res) => {
-  res.render("total", { title: "total" });
+  res.render("total", { title: "total", mainTitle: "total입니다" });
 });
 
 app.get("/loginok", (req, res) => {

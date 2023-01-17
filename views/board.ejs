@@ -1,6 +1,5 @@
 
 <%- include("./include/header.ejs") %>
-  <body>
     <h1><%=title%></h1>
     <table>
       <tr>
@@ -8,6 +7,10 @@
         <th>작성자</th>
         <th>제목</th>
         <th>등록일자</th>
+      </tr>
+
+      <tr>
+        <td colspan="4">for 일반</td>
       </tr>
       <% for(let i=0; i<boardTexts.length; i++){ %>
       <tr>
@@ -17,5 +20,19 @@
         <td><%=boardTexts[i].dates%></td>
       </tr>
       <% } %>
+
+      <tr>
+        <td colspan="4">forEach</td>
+      </tr>
+      <% boardTexts.forEach(function(item) { %>
+        <tr>
+          <td><%=item.num%></td>
+          <td><%=item.name%></td>
+          <td><%=item.title%></td>
+          <td><%=item.dates%></td>
+        </tr>
+      <% }) %>
+
     </table>
+
 <%- include("./include/footer.ejs") %>
