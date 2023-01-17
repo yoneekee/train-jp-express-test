@@ -18,9 +18,11 @@
 
 # ejs 사용방법
 
+- 노드의 템플릿엔진 : ejs
 - npm install ejs
 - 보여줄 html 파일이 있는 폴더명을 views로 변경
 - 내부의 html 파일들 확장자명 .ejs로 변경
 - index.js 파일에 추가
   app.set("view engine", "ejs"); // 템플릿엔진으로 ejs를 쓰겠다
   app.set("views", path.join(\_\_dirname, "views")); // views 폴더에 다 있다
+- 제이슨 형태로 자료를 보낼 수 있음 : <%= %> 이용해 html 내부에서 표현
