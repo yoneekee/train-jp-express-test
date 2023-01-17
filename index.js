@@ -21,6 +21,26 @@ app.get("/login", (req, res) => {
 
 app.get("/board", (req, res) => {
   //res.sendFile(path.join(__dirname, "./html/board.html"));
+  res.render("board", {
+    title: "board",
+    boardTexts: [
+      {
+        name: "이름1",
+        title: "제목입니다",
+        dates: "2023-01-01",
+      },
+      {
+        name: "이름2",
+        title: "제목입니다",
+        dates: "2023-01-01",
+      },
+      {
+        name: "이름3",
+        title: "제목입니다",
+        dates: "2023-01-01",
+      },
+    ],
+  });
 });
 
 app.get("/join", (req, res) => {
